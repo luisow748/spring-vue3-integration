@@ -1,4 +1,4 @@
-package inertia.spring.inertia;
+package com.luisow748.springvue3.inertia;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;

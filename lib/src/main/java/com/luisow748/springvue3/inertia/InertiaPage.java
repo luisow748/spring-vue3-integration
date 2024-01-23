@@ -1,4 +1,4 @@
-package inertia.spring.inertia;
+package com.luisow748.springvue3.inertia;
 
 public class InertiaPage {
     String component;
