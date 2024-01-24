@@ -41,7 +41,7 @@ public class InertiaView extends AbstractView {
     protected void renderMergedOutputModel(Map<String, Object> model,
                                            HttpServletRequest request,
                                            HttpServletResponse response) throws Exception {
-        final var page = InertiaPage.get((String) model.get("component"), (String) model.get("props"), request.getRequestURI());
+        final var page = InertiaVuePage.get((String) model.get("component"), (String) model.get("props"), request.getRequestURI());
 
         final var jsonPage = objectMapper.writeValueAsString(page);
 

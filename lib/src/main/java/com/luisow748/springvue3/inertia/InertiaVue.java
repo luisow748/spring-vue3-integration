@@ -3,16 +3,16 @@ package com.luisow748.springvue3.inertia;
 
 import org.springframework.web.servlet.ModelAndView;
 
-public class Inertia {
+public class InertiaVue {
 
     private static final String INERTIA_VIEW_NAME = "inertiaView";
 
-    public static ModelAndView renderVueComponent(String component) {
+    public static ModelAndView render(String component) {
         return new ModelAndView(INERTIA_VIEW_NAME)
             .addObject("component", component);
     }
 
-    public static ModelAndView renderVueComponent(String component, Props props) {
+    public static ModelAndView render(String component, Props props) {
         return new ModelAndView(INERTIA_VIEW_NAME)
             .addObject("component", component)
             .addObject("props", props.getContent());
